@@ -262,7 +262,6 @@ namespace SoftSynth
             short[] wave = new short[SAMPLE_RATE];  // one second of audio 
 
             IEnumerable<Oscillator> oscillators = this.Controls.OfType<Oscillator>();
-            IEnumerable<Sample> sampleRate = this.Controls.OfType<Sample>();
             int oscCount = oscillators.Count();
             byte[] binaryWave = new byte[SAMPLE_RATE * sizeof(short)];
             Random random = new Random();

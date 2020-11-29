@@ -50,9 +50,6 @@
     <Compile Include="Oscillator.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Sample.cs">
-      <SubType>Component</SubType>
-    </Compile>
     <Compile Include="Sound.cs">
       <SubType>Form</SubType>
     </Compile>
