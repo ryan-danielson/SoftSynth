@@ -50,6 +50,7 @@
     <Compile Include="Oscillator.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Program.cs" />
     <Compile Include="Sound.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -59,7 +60,6 @@
     <Compile Include="Synth.Designer.cs">
       <DependentUpon>Synth.cs</DependentUpon>
     </Compile>
-    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
