@@ -16,7 +16,10 @@ namespace SoftSynth
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+            string message = "If using the keyboard, press shift to toggle between upper and lower range.";
+            MessageBox.Show(message);
             Application.Run(new Synth());
+
         }
     }
 }
