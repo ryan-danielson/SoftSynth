@@ -22,19 +22,17 @@ namespace SoftSynth
         internal const short BITS_PER_SAMPLE = 16;
         internal float frequency = 0;
         internal bool toggle = false;
+        internal Frequencies freq;
 
         public Synth()
         {
-
             InitializeComponent();
             Oscillator Oscillator = new Oscillator();
-
+            freq = new Frequencies();
         }
 
         private void SoftSynth_KeyDown(object sender, KeyEventArgs e)
         {
-            Frequencies freq = new Frequencies();
-
             switch (e.KeyCode)
             {
                 // c4-c5
@@ -44,7 +42,8 @@ namespace SoftSynth
                         frequency = freq.get(30);
                         button18.Select();
 
-                    } else
+                    } 
+                    else
                     {
                         frequency = freq.get(1);    //c4
                         button1.Select();
@@ -55,7 +54,8 @@ namespace SoftSynth
                     {
                         frequency = freq.get(31);
                         button48.Select();
-                    } else
+                    } 
+                    else
                     {
                         frequency = freq.get(2);    // c#4
                         button36.Select();
@@ -78,7 +78,8 @@ namespace SoftSynth
                     {
                         frequency = freq.get(33);
                         button49.Select();
-                    } else
+                    } 
+                    else
                     {
                         frequency = freq.get(4);    // d#4
                         button37.Select();
@@ -89,7 +90,8 @@ namespace SoftSynth
                     {
                         frequency = freq.get(34);
                         button20.Select();
-                    } else
+                    } 
+                    else
                     {
                         frequency = freq.get(5);    // e4
                         button3.Select();
@@ -400,7 +402,6 @@ namespace SoftSynth
 
         private void button_Click(object sender, EventArgs e)
         {
-            Frequencies freq = new Frequencies();
             if (sender.Equals(button1))
                 frequency = freq.get(0);
             else if (sender.Equals(button36))
